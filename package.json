@@ -1,6 +1,7 @@
 {
   "name": "electron-updater-example",
-  "version": "0.7.2",
+  "productName": "Electron updater example",
+  "version": "0.8.2",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Matt Haggard",
@@ -23,6 +24,15 @@
         "zip",
         "dmg"
       ]
+    },
+    "win": {
+      "target": "nsis",
+      "oneClick": false,
+      "packElevateHelper": true,
+      "perMachine": true,
+      "guid": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
     }
   }
 }
