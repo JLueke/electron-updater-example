@@ -1,0 +1,23 @@
+{
+  "appId": "com.github.JLueke.electronupdaterexample",
+  "mac": {
+    "category": "your.app.category.type",
+    "target": [
+      "zip",
+      "dmg"
+    ]
+  },
+  "win": {
+    "target": [
+      "nsis"
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "packElevateHelper": true,
+    "perMachine": true,
+    "guid": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  }
+}

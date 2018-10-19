@@ -94,7 +94,10 @@ autoUpdater.on('update-downloaded', (info) => {
       buttons: ['Sure', 'No']
     }, (buttonIndex) => {
       if (buttonIndex === 0) {
-        autoUpdater.quitAndInstall();
+
+    	win.removeAllListeners();
+    	app.removeAllListeners('window-all-closed');
+      autoUpdater.quitAndInstall();
       }
     });
 });
